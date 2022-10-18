@@ -175,6 +175,10 @@
 @media (max-width: 500px) {
   .left-side {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
   }
 }
 
@@ -385,11 +389,19 @@
   border-radius: 50%;
   background-color: var(--second-color);
 }
+
 .projects__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .projects__list {
+    justify-content: center;
+    column-gap: 20px;
+  }
 }
 
 .projects__item {
