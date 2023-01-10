@@ -350,7 +350,7 @@
   .code__wrap,
   .projects__wrap,
   .languages__wrap {
-    padding: 10px 20px 20px 40px;
+    padding: 10px 10px 20px 40px;
   }
 }
 
@@ -393,14 +393,15 @@
 .projects__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  column-gap: 25px;
 }
 
 @media (max-width: 500px) {
   .projects__list {
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 30px;
   }
 }
 
